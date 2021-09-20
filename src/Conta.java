@@ -22,12 +22,10 @@ public class Conta {
         this.saldo += valorDoDeposito;
     }
 
-    public String extrato(){
-        return nomeDoTitular
-                + " "
-                + numeroDaConta
-                + " "
-                + saldo;
+    public void extrato(){
+        System.out.println("Nome do titular: " + nomeDoTitular);
+        System.out.println("Número da Conta: " + numeroDaConta);
+        System.out.printf("Saldo : R$ %.2f", saldo);
     }
 
 
